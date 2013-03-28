@@ -13,7 +13,7 @@
 	display: none;
 }
 
-.wufoo {
+.wufoo, .wufoo input#saveForm {
 	font-family: 'Libre Baskerville', serif !important;
 }
 
@@ -31,6 +31,7 @@
   border-color: #51a351 #51a351 #387038;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
   *background-color: #51a351;
+  font-size: 1.25em;
 }
 
 form.wufoo {
@@ -39,4 +40,8 @@ form.wufoo {
 
 form.wufoo span.req {
 	color: #780610 !important;
+}
+
+form li, form li.buttons {
+  padding-left: 0 !important;
 }
