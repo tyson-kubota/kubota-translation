@@ -9,7 +9,7 @@
 - - - - - - - - - - - - - - - - - - - - - */
 
 
-.wufoo #header.info {
+.wufoo .info {
 	display: none;
 }
 
