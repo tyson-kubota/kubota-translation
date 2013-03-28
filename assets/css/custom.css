@@ -1,0 +1,252 @@
+/*!
+Kubota Translation services custom CSS
+ */
+
+body {
+  padding-bottom: 40px;
+  background-image: -moz-linear-gradient( top, rgba(50,50,50,0.12), rgba(255,255,255,0) 10em );
+  background-image: -webkit-linear-gradient( top, rgba(50,50,50,0.12), rgba(255,255,255,0) 10em );
+  background-repeat: repeat-x;
+  background-color: #f7f5f6;
+  /*background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, rgba(255,255,255,.2)), color-stop(100%, rgba(50,50,50,.12)));*/
+}
+
+/* might use later... */
+
+/* a {
+  text-shadow: 0 .07em .2em silver;
+}*/
+
+/* Custom container */
+.container-narrow {
+  margin: 0 auto;
+  max-width: 700px;
+}
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+/*        margin: 60px 0;*/
+  text-align: center;
+  position: relative;
+}
+
+.jumbotron.image-bg::after {
+  content: '';  
+  background: url(./assets/img/falling-main-2.jpg) repeat center center;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.jumbotron h1 {
+  font-size: 72px;
+  line-height: 1;
+}
+.jumbotron .btn {
+  font-size: 21px;
+  padding: 14px 24px;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 60px 0;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+.featurette{
+  text-align: center;
+}
+
+.carousel img {
+position: absolute;
+top: 0;
+left: 0;
+min-width: 100%;
+height: 500px;
+}
+
+.header img {
+width: 100%;
+max-height: 300px;
+}
+
+.thumbnails img {
+opacity: .7;
+}
+.modal-backdrop {
+background-color: white;
+}
+.lightbox-content{
+padding: 0;
+-webkit-border-radius: 0;
+-moz-border-radius: 0;
+}
+
+.muted2{opacity: .6;}
+.muted3{opacity: .3;}
+
+.inline-link {
+  color: #780610;
+  font-weight: bold;
+}
+
+.masthead {
+}
+
+.masthead h3.centered {
+  text-align: center;
+}
+
+.masthead h3.site-title, .masthead h3.site-title a {
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+img.kts-logo {
+  width: 100%;
+  max-width: 400px;
+  margin: 20px auto 0;
+  display: block;
+}
+
+hr {
+  border-top: 1px solid lightgrey;
+}
+
+a {
+  color: #780610;
+  text-decoration: none;
+}
+a:hover {
+  color: #752323;
+  text-decoration: underline;
+}
+
+.nav-pills > .active > a,
+.nav-pills > .active > a:hover {
+  color: #ffffff;
+  background-color: #780610;
+}
+
+.masthead .kts-nav {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 400px;
+  border-top: 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
+}
+
+
+.kts-nav.nav-pills > li, 
+.kts-nav.nav-tabs > li {
+  float: none;
+  display: inline-block;
+  width: 32.5%;
+}
+
+.kts-nav.nav-pills > li > a, 
+.kts-nav.nav-tabs > li > a {
+  padding: 1.5em 2.5em;
+  margin: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+
+div.intro {
+  display: block;
+  clear: both;
+}
+
+div.footer p {
+  color: grey;
+  font-size: .75em;
+}
+
+input.contact,
+textarea,
+.uneditable-input {
+  width: 97%;
+}
+
+textarea.contact-details {
+  min-height: 8em;
+}
+
+input,
+button,
+select,
+textarea {
+  font-family: 'Libre Baskerville', serif;
+}
+
+@media (max-width: 480px) {
+  .kts-nav.nav-pills > li, 
+  .kts-nav.nav-tabs > li {
+    display: inline;
+  }
+
+  .kts-nav.nav-pills > li > a, 
+  .kts-nav.nav-tabs > li > a {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    border-top: 0px;
+    border-bottom: 0px;
+  }
+
+  div.intro-left {
+    width: 100%;
+    float: none;
+    padding-right: auto;
+  }
+  
+  div.intro-right {
+    width: 100%%;
+    float: none;
+  }
+
+  .row-fluid [class*="span"].intro-left, .row-fluid [class*="span"].intro-right {
+    width: 100% !important;
+    float: none;
+    padding-right: 0px !important;
+  }
+
+}
+
+@media (max-width: 767px) {
+  .intro-left, .row-fluid [class*="span"].intro-left {
+    padding-bottom: 1em;
+    width: 48%;
+    float: left;
+    padding-right: 20px;
+  }
+
+  .intro-right, .row-fluid [class*="span"].intro-right {
+    width: 50%;
+    float: right;
+  }
+
+  .lead.row-fluid {
+    text-align: center;
+  }
+
+  .row-fluid .span2 {
+    width: 32%;
+    display: inline-block;
+  }
+}
